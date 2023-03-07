@@ -2,7 +2,7 @@
 
 
 
-# [ API ] Clínica de Mercado
+# [ API ] Mercado
 ### 📑 Descrição
 Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informações das entidades de um mercado e efetua todas as operações **CRUD**: ``filiais``, ``funcionarios``, ``mercadorias``.
 
