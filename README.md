@@ -1,4 +1,6 @@
-# 🎮 Game List 
+# M5-IND_FINAL_Case-1-Meu-app
+
+# 🎮 Lista de Jogos 
 
  Um projeto de back-end construído com Node.js, Express.js, Cors, Nodemon e SQLite.<br>
  Ele permite que os usuários mantenham uma lista de jogos já jogados ou concluídos.
