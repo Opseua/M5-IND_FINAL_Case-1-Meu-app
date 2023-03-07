@@ -101,7 +101,7 @@ $ <http://localhost:6020>
 |  **`DELETE`** | **/funcionario/id** | Remove o funcionario.
   
   
-### [ 2 ] <em>Mercadorias</em>
+### [ 3 ] <em>Mercadorias</em>
 
 | Método | Rota | Descrição |
 | ------ | ----- | ----------- |
