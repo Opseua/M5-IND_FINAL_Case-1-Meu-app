@@ -1,10 +1,10 @@
-# Projeto individual Módulo 5
+# M5-IND_FINAL_Case-1-Meu-app
 
 
 
-# [ API ] Clínica de Fisioterapia
+# [ API ] Clínica de Mercado
 ### 📑 Descrição
-Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informações das entidades de um estúdio de tatuagem e efetua todas as operações **CRUD**: ``Fisioterapeuta``, ``Pacientes``, ``Agendamento``, ``Equipamentos``.
+Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informações das entidades de um mercado e efetua todas as operações **CRUD**: ``filiais``, ``funcionarios``, ``mercadorias``.
 
 
 
@@ -13,7 +13,7 @@ Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informa�
 
 <samp>
   
-- <em>Node.js</em> | <em>SQLite3</em> | <em>Express</em> | <em>Insomnia</em> | <em>CORS</em> | <em>npm</em> | <em>Nodemon</em>
+- <em>Node.js</em> | <em>SQLite3</em> | <em>Express</em> | <em>Postman</em> | <em>CORS</em> | <em>npm</em> | <em>Nodemon</em>
   
 </samp>
 
@@ -26,29 +26,25 @@ Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informa�
 ```
 src/
 ├─ controllers/
-│  ├─ FisioterapeutaController.js
-│  ├─ PacientesController.js
-│  ├─ AgendamentoController.js
-│  └─ EquipamentosController.js
+│  ├─ FiliaisController.js
+│  ├─ FuncionariosController.js
+│  ├─ MercadoriasController.js
 ├─ dao/
-│  ├─ FisioterapeutaDAO.js
-│  ├─ PacientesDAO.js
-│  ├─ AgendamentoDAO.js
-│  └─ EquipamentosDAO.js
+│  ├─ FiliaisDAO.js
+│  ├─ FuncionariosDAO.js
+│  ├─ MercadoriasDAO.js
 ├─ models/
-│  ├─ Fisioterapeuta.js
-│  ├─ Pacientes.js
-│  ├─ Agendamento.js
-│  └─ Equipamentos.js
+│  ├─ Filiais.js
+│  ├─ Funcionarios.js
+│  ├─ Mercadorias.js
 ├─ database/
 │  ├─ create-and-populate.js
 │  ├─ config.js
 │  └─ database.db
 ├─ routes/
-│  ├─ fisioterapeuta.js
-│  ├─ pacientes.js
-│  ├─ agendamento.js
-│  └─ euipamentos.js
+│  ├─ filiais.js
+│  ├─ funcionarios.js
+│  └─ mercadorias.js
 └─ main.js
 ```
 
@@ -67,10 +63,10 @@ src/
 
 ```bash
 # Clone o repositório
-$ git clone https://github.com/LaraSharmon/Projeto-API-Redmi.git
+$ git clone https://github.com/Opseua/M5-IND_FINAL_Case-1-Meu-app
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd clínicaApi
+$ cd M5-IND_FINAL_Case-1-Meu-app
 
 # Instale as dependências
 $ npm install
@@ -84,45 +80,34 @@ $ <http://localhost:6020>
 
 ## Rotas CRUD
 
-### [ 1 ] <em>Fisioterapeuta</em>
+### [ 1 ] <em>Filiais</em>
 
 | Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-| **`GET`** | **/fisioterapeutas** | Retorna todos os fisioterapeutas. |
-|  **`GET`** | **/fisioterapeuta/id** | Retorna um fisioterapeuta. |
-|  **`POST`** | **/fisioterapeuta** | Cria um novo fisioterapeuta.  |
-|  **`PUT`** | **/fisioterapeuta/id** | Altera os dados do fisioterapeuta.
-|  **`DELETE`** | **/fisioterapeuta/id** | Remove o fisioterapeuta.
+| **`GET`** | **/filiais** | Retorna todos as filiais. |
+|  **`GET`** | **/filial/id** | Retorna uma filial. |
+|  **`POST`** | **/filial** | Cria uma nova filial.  |
+|  **`PUT`** | **/filial/id** | Altera os dados da filial.
+|  **`DELETE`** | **/filial/id** | Remove a filial.
   
-### [ 2 ] <em>Pacientes</em>
+### [ 2 ] <em>Funcionarios</em>
 
 | Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/pacientes** | Retorna todos os Pacientes. |
-|  **`GET`** | **/paciente/id** | Retorna um Paciente. |
-|  **`POST`** | **/paciente** | Cria um novo Paciente.  |
-|  **`PUT`** | **/paciente/id** | Altera os dados do Paciente.
-|  **`DELETE`** | **/paciente/id** | Remove o Paciente.
+|  **`GET`** | **/funcionarios** | Retorna todos os funcionarios. |
+|  **`GET`** | **/funcionario/id** | Retorna um funcionario. |
+|  **`POST`** | **/funcionario** | Cria um novo funcionario.  |
+|  **`PUT`** | **/funcionario/id** | Altera os dados do funcionario.
+|  **`DELETE`** | **/funcionario/id** | Remove o funcionario.
   
   
-### [ 2 ] <em>Agendamento</em>
+### [ 2 ] <em>Mercadorias</em>
 
 | Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/agendamentos** | Retorna todos os agendamentos. |
-|  **`GET`** | **/agendamento/id** | Retorna um agendamento. |
-|  **`POST`** | **/agendamento** | Cria um novo agendamento.  |
-|  **`PUT`** | **/agendamento/id** | Altera os dados do agendamento.
-|  **`DELETE`** | **/agendamento/id** | Remove o agendamento.
+|  **`GET`** | **/mercadorias** | Retorna todas as mercadorias. |
+|  **`GET`** | **/mercadoria/id** | Retorna uma mercadoria. |
+|  **`POST`** | **/mercadoria** | Cria uma nova mercadoria.  |
+|  **`PUT`** | **/mercadoria/id** | Altera os dados da mercadoria.
+|  **`DELETE`** | **/mercadoria/id** | Remove a mercadoria.
 
-
-### [ 2 ] <em>Equipamentos</em>
-
-| Método | Rota | Descrição |
-| ------ | ----- | ----------- |
-|  **`GET`** | **/equipamentos** | Retorna todos os equipamentos. |
-|  **`GET`** | **/equipamento/id** |  Retorna um equipamento. |
-|  **`POST`** | **/equipamento** | Cria um novo mequipamento.  |
-|  **`PUT`** | **/equipamento/id** | Altera os dados do equipamento.
-|  **`DELETE`** | **/equipamento/id** | Remove o equipamento.
-  
