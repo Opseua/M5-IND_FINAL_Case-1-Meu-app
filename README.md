@@ -55,5 +55,3 @@ Abra um pull request
 ## 📝 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo <a href="https://github.com/Opseua/M5-IND_FINAL_Case-1-Meu-app/blob/main/LICENSE">LICENSE</a> para detalhes.
 
-## 🎖️ Creditos 
-Feito com 💙 por <a href="https://github.com/Opseua/">Orlando Santana<a/>.
